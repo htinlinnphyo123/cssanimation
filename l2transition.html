@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS transition</title>
+	<style type="text/css">
+		button{
+			width: 290px;
+			height: 90px;
+			background-color: blue;
+			color: #fff;
+			font-size: 28px;
+			border: none;
+
+			/*transition-property:width,background-color,color;*/
+			/*transition-property: all;*/
+			/*transition-duration: 2s;*/
+
+							/*p    			du*/
+			/*transition: background-color 3s;*/
+			/*transition: all 3s;	*/
+	
+			/*transition-duration: 2s;					*/
+			/*transition: background-color 5s,color 3s;*/
+		
+			/*transition-property: all;*/
+			/*transition-duration: 3s;*/
+			/*transition-timing-function: linear;*/
+			
+					  /*p    du   tf  */
+			transition: background-color 3s ease-in-out,color 6s ease-out;
+		}
+		button:hover{
+			/*width: 600px;*/
+			background-color:red;
+			color: #000;
+			
+			/*border-radius: 20px;*/
+
+		}
+	</style>
+</head>
+<body>
+
+	<button>CSS transition</button>
+
+
+</body>
+</html>

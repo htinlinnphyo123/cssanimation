@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test js</title>
+	<style type="text/css">
+		body{
+			height:100vh;
+
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		div{
+			width:300px;
+			height:300px;
+
+			border:2px solid yellow;
+
+			background:url('./img/bird.jpg');
+			background-position:right center;
+			background-size:cover;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <ul class="a b c">
+		<li class="d e f">Aung Aung</li>
+		<li class="d e f">Zaw Zaw</li>
+		<li class="d e f">Mg Mg</li>
+		<li class="e e f">Su Su</li>
+		<li class="d e f">Hla Hla</li>
+		<li class="d e f">Mya Mya</li>
+	</ul> -->
+
+	<div></div>
+
+
+	<script type="text/javascript">
+
+		// let x=['aung aung','zaw zaw','maung maung'];
+		// console.log(x);
+		// console.log(typeof x);
+		// console.log(x[0])
+
+		const y=document.getElementsByTagName('li');
+		console.log(y);
+		const z=document.querySelectorAll('li');
+		console.log(z);
+		const a=z.classList;
+		console.log(a);
+		z.forEach((b)=>{
+			console.log(b.classList);			
+		})
+		z[0].innerText="aung kaung"
+		// const z=y.classList;
+		// console.log(z)
+
+	</script>
+
+</body>
+</html>
